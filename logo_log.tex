@@ -1,0 +1,42 @@
+\RequirePackage{plautopatch}
+\documentclass[uplatex,dvipdfmx]{jsarticle}
+
+\usepackage{amsmath, amsthm}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{biblatex}
+
+\renewcommand{\figurename}{Fig.} %図のキャプションをFig.〇にする
+\renewcommand{\tablename}{Table } %表のキャプションをTable 〇にする
+\setcounter{tocdepth}{3} %\subsubsectionまで目次に表示する
+
+\begin{document}
+
+\begin{titlepage}
+  \noindent %段落の文字下げ防ぐ
+  \\ \\ \\ \\ \\ \\ \\ \\ 
+  \begin{center}
+  \begin{LARGE}
+  
+    研究室のロゴ作成のログ
+
+  \end{LARGE}
+  \end{center}
+  \vspace{7cm}
+  \begin{center}
+  \begin{LARGE}
+  岡山　毅\\
+  tsuyoshi.okayama@gmail.com
+  \end{LARGE}
+  \end{center}
+  % \markright{ver.2023.03.09} 
+\end{titlepage}
+\newpage
+
+\tableofcontents
+\newpage
+
+\end{document}
