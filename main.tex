@@ -1,4 +1,5 @@
 \RequirePackage{plautopatch}
+
 \documentclass[uplatex,dvipdfmx]{jsarticle}
 
 \usepackage{amsmath, amsthm}
@@ -8,6 +9,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{biblatex}
+
+\addbibresource{bib_logo_tsuokay.bib}
 
 \renewcommand{\figurename}{Fig.} %図のキャプションをFig.〇にする
 \renewcommand{\tablename}{Table } %表のキャプションをTable 〇にする
@@ -38,5 +41,25 @@
 
 \tableofcontents
 \newpage
+
+\section{本プロジェクトの概要}
+
+4Dは大事である\cite{Schunck2021}。
+
+現段階（2023.06.05）時点での研究室名は"Agri3（Agri-cubed） lab"である。この研究室名を３次元で表現し、アニメーションを作成したい。同時にHoudiniの技術的な訓練も兼ねる。
+
+現時点で考えている手順は以下の通り。適宜、用語についてはCG用言語として適切なものに変更していくこと。
+
+\bigskip
+\begin{itemize}
+  \item ３次元文字を表示する
+  \item カメラ位置を設定する
+  \item レンダリングをする
+  \item "3"の数字から光を出す
+  \item "3"の数字を移動させる
+  \item "Agri"についての工夫をこらす
+\end{itemize}
+
+\printbibliography
 
 \end{document}
