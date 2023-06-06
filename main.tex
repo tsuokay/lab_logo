@@ -64,7 +64,7 @@
 
 \section{2023.06.06の作業}
 "polyExtrude"を使用して、文字を立体化。
-standard materialsを使ってレンダリングしてみる。成果はこれ Fig.\ref{fig:rendered_230606}。
+standard materialsを使ってレンダリングしてみる。成果はこれ Fig. \ref{fig:rendered_230606}。
 
 
 \begin{figure}[h]
@@ -84,8 +84,6 @@ standard materialsを使ってレンダリングしてみる。成果はこれ F
   \item "Agri"はこのように単純で良いのか
 \end{itemize}
 
-
-
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.7\textwidth]{figs/logo_230606.PNG}
@@ -93,6 +91,29 @@ standard materialsを使ってレンダリングしてみる。成果はこれ F
   \label{fig:rendered_230606}
 \end{figure}
 
+
+\subsection{球を発光させる}
+geometoryを分ける必要がありそう\footnote{理論と実践で学ぶHoudini P622}。
+
+球を別のgeometryで作成し、Lights and CamerasのGeometry lightを選択してみる。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figs/fig_light_3.PNG}
+  \caption{2023.06.06のレンダリング結果}
+  \label{fig:rendered_230606_2}
+\end{figure}
+
+
+立体にした途端に、重力が無いように見えて違和感がでるのが面白い。
+どういうことだろうか。fig \ref{fig:rendered_230606_2}とfig. \ref{fig:rendered_230606_3}の違いがよくわからない。発光についての知識も不足している。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figs/fig_light_4.PNG}
+  \caption{2023.06.06のレンダリング結果}
+  \label{fig:rendered_230606_3}
+\end{figure}
 
 \printbibliography
 
